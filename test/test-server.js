@@ -48,7 +48,7 @@ describe('Shopping List', function() {
       .then(function(res) {
         res.should.have.status(200);
         res.should.be.json;
-        res.body.should.be.a('array');
+        res.body.should.be.an('array');
 
         // because we create three items on app load
         res.body.length.should.be.at.least(1);
